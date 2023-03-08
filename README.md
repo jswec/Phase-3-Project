@@ -27,7 +27,6 @@
      
 The data that we used in our analysis was from Kaggle.com "https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset" a anonymized data set from an american telecommunications company.
 
-***
 
 ***
 
