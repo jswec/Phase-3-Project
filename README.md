@@ -82,40 +82,53 @@ Of the customers who did churn, a significant amount of them spent around $15-$2
 
 ## The Model
 
-Following our exploratory data analysis and identification of the most important features, we ran through several iterations of a model and were able to develop a final model using a balanced and scaled version of our dataset. Throughout the process, we focused on minimizing the amount of false negatives produced - we didn’t want to predict a customer would stay when in fact they churned. From that final model, we gathered the top 5 factors and plotted them alongside the likelihood of churn for each unit increase - in other words, for each time a customer has to call customer service, they’re about 2.6 times more likely to churn assuming everything else remains equal. We found the model to be 76% accurate overall and 72% accurate when just predicting customer churn.
+The final model can be found in [FinalNotebook.ipynb].
+
+Following our exploratory data analysis and identification of the most important features, we ran through several iterations of a model and were able to develop a final model using a balanced and scaled version of our dataset.
+
+Throughout the process, we focused on minimizing the amount of false negatives produced - we didn’t want to predict a customer would stay when in fact, they churned.
+
+From that final model, we gathered the top 5 factors and plotted them alongside the likelihood of churn for each unit increase - in other words, for each time a customer has to call customer service, they’re about 2.6 times more likely to churn assuming everything else remains equal.
+
+
+
+We found the model to be 76% accurate overall and 72% accurate when just predicting customer churn.
 
 ***
 
 
 ## Conclusions and Recommendations
 
-Based on the results of our final model we were able to develop a profile for customers that are likely to churn. We want to focus our attention on customers in our service who have opted for an international plan, have called customer service an average of 4 times, do not use voicemail, have spent $17 for evening calls, and spend 3.5 hours on the phone during daytime hours.
+Based on the results of our final model we were able to retroactively assign probabilities of churn to each observation. Based on those probabilities, we ranked customer `propensity to churn` in a list of priorities from 1-10.
 
+On average, Priority 1 customers have the following attributes:
+- `international plan`: Opted for an international plan
+- `customer service calls`: Called customer service 4 times
+- `number vmail messages`:  Do not use voicemail
+- `total eve charge`: Spent $17 on evening calls over the course of their account
+- `total day minutes`: Spent 3.5 hours on the phone during daytime hours
 
 Taking our analysis a step further, we can confidently say that by delivering out of this world customer service, we will immediately reduce the likelihood of churn.
--
-
-, whether that be through retraining or seminars or even offering discounts to those individuals who have a disproportionate amount of day time use minutes
-We’ve also generated data for our top priority customer cases
-
-
 
 ## Next Steps
 
-Look into the infrastructure of the top ten churn states
+Our first step should be customer service analysis. We would like to parse chat logs of customer service calls to understand the specific nature of the customer service calls. 
 
-Parse chat logs of customer service calls to divine problem customers or problem customer service members
+Next, we'd like to take a look at the infrastructure of the top ten states where we see churn and examine if there are any gaps in coverage.
 
-Check device compatibility or firmware issues on phones running our service
+Finally, we should dig deeper into the 
+
+
 
 ## Repository Structure
 
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── final.ipynb                         <- Narrative documentation of analysis in Jupyter notebook
+├── FinalNotebook.ipynb                 <- Narrative documentation of analysis in Jupyter notebook
+├── DataVisualization.ipynb             <- Easy Access to Data Visualization in Jupyter notebook
 ├── Presentation.pdf                    <- PDF version of project presentation
-├── notebooks                           <- Exploratory Notebooks
+├── Notebooks                           <- Exploratory Notebooks
 ├── images                              <- Image Files
 └── Data                                <- Data Source
 ```
