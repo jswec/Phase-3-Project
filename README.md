@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project is an analysis of customer churn based on anonymized data provided by Flatiron School's curated list of Phase 3 project datasets via [Kaggle.com](https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset | width=100px).
+This project is an analysis of customer churn based on anonymized data provided by Flatiron School's curated list of Phase 3 project datasets via [Kaggle.com](https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset).
 
 The premise is to build a classifier to predict whether a customer will discontinue their prepaid mobile phone plan with telecom provider SyriaTel.
 
@@ -17,11 +17,11 @@ Churn in the Telecommunications industry is at an all time low however SyriaTel 
 
 For reference, our competitors reported an average of 2.31% 2022 4th quarter prepaid churn rate.
 
-![churn.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn.png | width=50px)
+![churn.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn.png)[width=50px]
 
 Before analyzing the data, we performed surface level market research to understand what prepaid plans are being offered by our competitors. Below is a word cloud analysis based on the landing pages for top prepaid plans in the United States. 
 
-![wordcloud.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/wordcloud.png | width=75px)
+![wordcloud.png|50%](https://github.com/leo-schell/Phase-3-Project/blob/main/images/wordcloud.png | width=75px)
 
 Note a heavy emphasis on unlimited talk, text, and data plans. This will be important to consider as we evolve our offering to something more attractive to the average United States consumer.
 
