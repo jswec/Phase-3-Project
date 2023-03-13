@@ -21,7 +21,7 @@ For reference, our competitors reported an average of 2.31% 2022 4th quarter pre
 
 Before analyzing the data, we performed some market research to understand what prepaid plans are being offered by our competitors. Below is a word cloud analysis based on the landing pages for top prepaid plans in the United States. 
 
-INSERT WORD CLOUD HERE
+![wordcloud.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/wordcloud.png)
 
 
 Note a heavy emphasis on unlimited talk, text, and data plans. This will be important to consider as we evolve our offering to something more attractive to the average United States consumer.
@@ -39,9 +39,9 @@ For this analysis, we have elected to take the most objective look at the data p
 
 Bottom line, here are 2 suggestions that will have immediate impact on whether a customer will churn.
 
-1. The number of times a customer engages with customer service has a direct impact on their likelihood of churn. For every one phone call, the likelihood increases by 2.6%.
+>1. The number of times a customer engages with customer service has a direct impact on their likelihood of churn. For every one phone call, the likelihood increases by 2.6%.
 
-2. To minimize churn, look into any potential issues that international plan members may have. For every instance of an international plan, a customer is 2x more likely to churn.
+>2. To minimize churn, look into any potential issues that international plan members may have. For every instance of an international plan, a customer is 2x more likely to churn.
 
 ***
 
@@ -64,17 +64,19 @@ Here are a few highlights from our initial analysis:
 ***States***
 We began by plotting the customer churn by state in an attempt to identify geographic trends. Texas, New Jersey, and Maryland churned the most but otherwise there were no significant trends.
 
+STATE![wordcloud.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/wordcloud.png)
 
 ***Daytime Minutes***
 
 Of the customers who did churn, two daytime usage groups stand out: those who speak on the phone between 2-3 hours and 4-5 hours. 
 
+[churn_daytimemins.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn_daytimemins.png)
 
 ***Evening Charges***
 
 Of the customers who did churn, a significant amount of them spent around $15-$21 over the course of their account on evening calls.
 
-
+[wordcloud.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/wordcloud.png)
 
 
 ***
@@ -82,24 +84,26 @@ Of the customers who did churn, a significant amount of them spent around $15-$2
 
 ## The Model
 
-The final model can be found in [FinalNotebook.ipynb].
+Our full findings and  can be found in [FinalNotebook.ipynb].
 
 Following our exploratory data analysis and identification of the most important features, we ran through several iterations of a model and were able to develop a final model using a balanced and scaled version of our dataset.
 
 Throughout the process, we focused on minimizing the amount of false negatives produced - we didn’t want to predict a customer would stay when in fact, they churned.
 
-From that final model, we gathered the top 5 factors and plotted them alongside the likelihood of churn for each unit increase - in other words, for each time a customer has to call customer service, they’re about 2.6 times more likely to churn assuming everything else remains equal.
+From that final model, we gathered the top 5 factors and plotted them alongside the likelihood of churn for each unit increase - in other words, for each time a customer has to call customer service, they’re about 2.6 times more likely to churn assuming everything else remains equal. Below is a chart that shows the relationship between `churn` and the top 5 variables: `customer service calls`, `total day minutes`, `international plan`, `number vmail messages`, `total eve minutes`.
 
-
+[finalmodel.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/finalmodel.png)
 
 We found the model to be 76% accurate overall and 72% accurate when just predicting customer churn.
+
+Finally, based on the results of our final model we were able to retroactively assign probabilities of churn to each observation. We then ranked customer `propensity to churn` in a list of priorities from 1-10.
+
 
 ***
 
 
 ## Conclusions and Recommendations
 
-Based on the results of our final model we were able to retroactively assign probabilities of churn to each observation. Based on those probabilities, we ranked customer `propensity to churn` in a list of priorities from 1-10.
 
 On average, Priority 1 customers have the following attributes:
 - `international plan`: Opted for an international plan
@@ -107,6 +111,8 @@ On average, Priority 1 customers have the following attributes:
 - `number vmail messages`:  Do not use voicemail
 - `total eve charge`: Spent $17 on evening calls over the course of their account
 - `total day minutes`: Spent 3.5 hours on the phone during daytime hours
+
+[priority1.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/priority1.png)
 
 Taking our analysis a step further, we can confidently say that by delivering out of this world customer service, we will immediately reduce the likelihood of churn.
 
@@ -116,8 +122,10 @@ Our first step should be customer service analysis. We would like to parse chat 
 
 Next, we'd like to take a look at the infrastructure of the top ten states where we see churn and examine if there are any gaps in coverage.
 
-Finally, we should dig deeper into the 
-
+Finally, we can reasonably expect that politics will play a factor in a customer's propensity to churn. Some areas for further exploration: 
+- Where are our international customers calling?
+- How many of our American customers are Syrian and how can this brand best serve them?
+- What is the public's perception of the SyriaTel Brand? Could it be time for a rebrand?
 
 
 ## Repository Structure
