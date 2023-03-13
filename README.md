@@ -19,14 +19,9 @@ For reference, our competitors reported an average of 2.31% 2022 4th quarter pre
 
 ![churn.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn.png)
 
-
-
-
-<churn.png src="https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn.png" width="50">
-
 Before analyzing the data, we performed surface level market research to understand what prepaid plans are being offered by our competitors. Below is a word cloud analysis based on the landing pages for top prepaid plans in the United States. 
 
-![wordcloud.png|50%](https://github.com/leo-schell/Phase-3-Project/blob/main/images/wordcloud.png | width=75px)
+![wordcloud.png|50%](https://github.com/leo-schell/Phase-3-Project/blob/main/images/wordcloud.png)
 
 Note a heavy emphasis on unlimited talk, text, and data plans. This will be important to consider as we evolve our offering to something more attractive to the average United States consumer.
 
@@ -65,19 +60,19 @@ Here are a few highlights from our initial analysis:
 ***States***
 We began by plotting the customer churn by state in an attempt to identify geographic trends. Texas, New Jersey, and Maryland churned the most but otherwise there were no significant trends.
 
-![states.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/states.png | width=100px)
+![states.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/states.png)
 
 ***Daytime Minutes***
 
 Of the customers who did churn, two daytime usage groups stand out: those who speak on the phone between 2-3 hours and 4-5 hours. 
 
-![churn_daytimemins.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn_daytimemins.png | width=100px)
+![churn_daytimemins.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn_daytimemins.png)
 
 ***Evening Charges***
 
 Of the customers who did churn, a significant amount of them spent around $15-$21 over the course of their account on evening calls.
 
-![churn_eveningcharges.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn_eveningcharges.png | width=100px)
+![churn_eveningcharges.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn_eveningcharges.png)
 
 
 ***
@@ -93,7 +88,7 @@ Throughout the process, we focused on minimizing the amount of false negatives p
 
 From that final model, we gathered the top 5 factors and plotted them alongside the likelihood of churn for each unit increase - in other words, for each time a customer has to call customer service, they’re about 2.6 times more likely to churn assuming everything else remains equal. Below is a chart that shows the relationship between `churn` and the top 5 variables: `customer service calls`, `total day minutes`, `international plan`, `number vmail messages`, `total eve minutes`.
 
-![finalmodel.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/finalmodel.png | width=100px)
+![finalmodel.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/finalmodel.png)
 
 We found the model to be 76% accurate overall and 72% accurate when just predicting customer churn.
 
@@ -113,7 +108,7 @@ On average, Priority 1 customers have the following attributes:
 - `total eve charge`: Spent $17 on evening calls over the course of their account
 - `total day minutes`: Spent 3.5 hours on the phone during daytime hours
 
-![priority1.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/priority1.png | width=100px)
+![priority1.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/priority1.png)
 
 Taking our analysis a step further, we can confidently say that by delivering out of this world customer service, we will immediately reduce the likelihood of churn.
 
