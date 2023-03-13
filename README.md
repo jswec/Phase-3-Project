@@ -17,7 +17,12 @@ Churn in the Telecommunications industry is at an all time low however SyriaTel 
 
 For reference, our competitors reported an average of 2.31% 2022 4th quarter prepaid churn rate.
 
-![churn.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn.png)[width=50px]
+![churn.png](https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn.png)
+
+
+
+
+<churn.png src="https://github.com/leo-schell/Phase-3-Project/blob/main/images/churn.png" width="50">
 
 Before analyzing the data, we performed surface level market research to understand what prepaid plans are being offered by our competitors. Below is a word cloud analysis based on the landing pages for top prepaid plans in the United States. 
 
